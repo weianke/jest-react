@@ -3,7 +3,7 @@ module.export = {
     roots: ['<rootDir>/src'],
     collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
     setupFiles: ['react-app-polyfill/jsdom'],
-    setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
+    setupFilesAfterEnv: ['./node_modules/jest-enzyme/lib/index.js','<rootDir>/src/setupTests.js'],
     testMatch: [
       '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',
       '<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}',
